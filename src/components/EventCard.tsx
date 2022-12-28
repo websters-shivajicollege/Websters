@@ -22,7 +22,7 @@ export default function EventCard() {
           <a href="/">Register</a>
         </div>
         <div className="relavtive text-black pt-2 pb-2 shadow hover:shadow-2xl pl-16 pr-16 font-bold mt-8 ml-8 bg-white">
-          <a href="/">Vist</a>
+          <a href="/">Visit</a>
         </div>
       </div>
     </div>
