@@ -21,7 +21,7 @@ export default function EventCard() {
         <div className="relavtive text-black pt-2 pb-2 shadow hover:shadow-2xl sm:pl-6 pl-12 pr-12 font-bold mt-8 ml-6 bg-white">
           <a href="/">Register</a>
         </div>
-        <div className="relavtive text-black pt-2 pb-2 shadow hover:shadow-2xl  sm:pl-4 pl-16  sm:pr-4 pr-16 font-bold mt-8 ml-8 bg-white">
+        <div className="relavtive text-black pt-2 pb-2 shadow hover:shadow-2xl pl-16 pr-16 font-bold mt-8 ml-8 bg-white">
           <a href="/">Vist</a>
         </div>
       </div>
