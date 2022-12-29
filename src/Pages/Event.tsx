@@ -15,7 +15,7 @@ export default function Event() {
         recusandae necessitatibus omnis veritatis praesentium quia? Ea
         doloremque unde rerum voluptatum.
       </div>
-      <div className=" relative grid xl:grid-cols-2 sm:grid-cols-1 gap-40 top-52 ">
+      <div className=" relative grid xl:grid-cols-2 sm:grid-cols-2 gap-40 m:gap-10 top-52 ml-4 sm:content-center ">
         <EventCard />
         <EventCard />
         <EventCard />
