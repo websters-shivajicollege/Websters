@@ -13,7 +13,7 @@ export default function HomePage() {
                     alt=""
                     className="relative bg-cover  "
                 /></div>
-                <div className="relative mx-10 pl-20 my-11"><a href={hi} className="text-white shadow hover:shadow-2xl">Events</a></div>
+                <div className="relative mx-10 pl-20 my-11"><a href="#" className="text-white shadow hover:shadow-2xl">Events</a></div>
                 <div className="relative mx-10 my-11"><a href="#" className="text-white shadow hover:shadow-2xl">Techleons</a></div>
                 <div className="relative mx-10 my-11"><a href="#" className="text-white shadow hover:shadow-2xl">Contact Us</a></div>
 
