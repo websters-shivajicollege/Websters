@@ -39,7 +39,7 @@ export default function HomePage() {
 
 
                 </div>
-                <div className="ralative ml-5 mr-7 mt-3 bg-white w-0.5"></div>
+                <div className="relative ml-5 mr-7 mt-3 bg-white w-0.5"></div>
                 <div className="relative flex flex-1 mx-10 mt-3  text-white text-left">
                     <p>The Department lays prime focus on academics intersoersed with co-curricular
                         and extra-curricular activities that bring the versatility of its students to
@@ -55,8 +55,19 @@ export default function HomePage() {
                 {/* Change this font family to kapartino */}
                 <h1 className="text-white text-8xl font-mono tracking-widest">EVENTS</h1>
             </div>
-            <div className="relative  ">
-
+            <div className="relative flex flex-row w-full mt-10 ">
+                <div className="relative bg-white mb-5 mr-2 w-full h-28 "></div>
+                <div className="relative text-left mr-5"><h1 className="text-white text-9xl font-mono  tracking-tight">TEAMS</h1></div>
+                <div className="relative text-left">
+                    <div className="relative bg-white w-full h-1"></div>
+                    <div className="relative text-white my-4">
+                        <p>The Department of Computers Science was established in 1984. The Department aims 
+                            at upholding the cognitive aspect of education by ensuring academics excellence and
+                            intellectual growth of its students.
+                        </p>
+                    </div>
+                    <div className="relative bg-white w-1/2 h-1"></div>
+                </div>
             </div>
         </>
     )
