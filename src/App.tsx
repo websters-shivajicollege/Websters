@@ -3,7 +3,7 @@ import "./App.css";
 import Event from "./Pages/Event";
 import Homepage from "./Pages/Homepage";
 import Team from "./Pages/Team";
-
+import ContactUs from "./Pages/ContactUs";
 function App() {
   return (
     <Router>
