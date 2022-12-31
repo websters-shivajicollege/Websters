@@ -1,9 +1,12 @@
 import React from "react";
 import EventCard from "../components/EventCard";
-export default function Event() {
+import Navbar from "../components/Navbar";
+
+function Event() {
   return (
-    <>
-      <div className=" relative text-center text-white font-bold text-9xl grid-cols-4 sm:auto-cols-max tracking-widest ">
+    <section className="bg-black">
+      <Navbar />
+      <div className="relative text-center text-white font-bold text-9xl grid-cols-4 sm:auto-cols-max tracking-widest ">
         EVENTS
       </div>
       <div className="relative top-16  text-center text-stone-400 text-grid-cols-2 mr-9 ">
@@ -21,6 +24,8 @@ export default function Event() {
         <EventCard />
         <EventCard />
       </div>
-    </>
+    </section>
   );
 }
+
+export default Event;
