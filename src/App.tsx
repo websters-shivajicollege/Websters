@@ -4,6 +4,7 @@ import "./App.css";
 import Event from "./Pages/Event"
 import HomePage from "./Pages/HomePage"
 import Team from "./Pages/Team";
+import ContactUs from "./Pages/ContactUs";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -13,6 +14,7 @@ function App() {
     <Route path="/" element={<HomePage/>} />
     <Route path="/Event" element={<Event/>} />
     <Route path="/Team" element={<Team/>} />
+    <Route path="/ContactUs" element={<ContactUs/>} />
     </Routes>
    </Router>
   ); 
