@@ -2,8 +2,8 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#121212] p-8">
-      <div className="w-[70%] mx-auto">
+    <footer className="w-full bg-[#121212] p-4 sm:p-8">
+      <div className="w-[90%] sm:w-[70%] mx-auto">
         <div className="sm:grid grid-cols-2">
           <div className="col">
             <img
