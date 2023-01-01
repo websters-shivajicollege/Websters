@@ -5,9 +5,9 @@ export default function Page1info() {
     <>
     <div className="realtive flex w-full flex-row  font-poppins">
         <div className="relative flex-1 mx-10 mt-3 text-white text-left">
-          <h1 className="text-3xl">hey !</h1>
-          <h1 className="text-2xl">we are Websters, a Computer science</h1>
-          <p className=" text-slate-200 leading-7 tracking-wide ">
+          <h1 className="text-3xl">Hey !</h1>
+          <h1 className="text-2xl leading-10">We are Websters, a Computer science</h1>
+          <p className=" text-gray-100 leading-7 tracking-wide ">
             Department society of the Shivaji College,<br></br>University Of
             Delhi
           </p>
