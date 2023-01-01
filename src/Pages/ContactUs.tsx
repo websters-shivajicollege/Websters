@@ -1,13 +1,13 @@
 import ContactUsForm from "../components/ContactUsForm";
 function ContactUs() {
   return (
-    <div className="m-auto " style={{ color: "white" }}>
+    <div className="container" style={{ color: "white" }}>
       <div className=" relative text-center text-white font-bold text-2xl md:text-7xl xl:text-9xl grid-cols-4 sm:auto-cols-max tracking-widest mb-8 ">
         Let's Talk
       </div>
 
       {/* Left side of Page       */}
-      <div className="container w-1/2 md:flex float-left border-white border-r-2 h-96">
+      <div className="container w-1/2 md:flex float-left border-white border-r-2">
         hello
         <ContactUsForm />
       </div>
