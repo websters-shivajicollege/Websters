@@ -120,7 +120,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contact">
+              <Link to="/contactUs">
                 <a className="flex items-center">&nbsp; Contact Us</a>
               </Link>
             </li>
