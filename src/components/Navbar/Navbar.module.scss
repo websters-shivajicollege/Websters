@@ -107,7 +107,7 @@
     }
 
     li a {
-      @apply font-poppins uppercase text-sm transition-colors relative;
+      @apply font-poppins uppercase text-sm transition-colors relative font-semibold;
 
       &:after {
         content: "";

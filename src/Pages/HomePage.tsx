@@ -3,13 +3,24 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import TeamCard from "../components/TeamCard";
 import Footer from "../components/Footer";
+import Skeleton from "react-loading-skeleton";
+import { Link } from "react-router-dom";
+import useMember from "../hooks/useMembers";
+import "react-loading-skeleton/dist/skeleton.css";
+
+export interface IResponse {
+  name: string;
+  post: string;
+  image: string;
+}
 
 const Homepage = () => {
+  const { isLoading, isFetching, data } = useMember();
   return (
     <section className="bg-black h-auto">
       <Navbar />
       <div className="hero-section h-[70vh] flex flex-col items-center justify-between my-12">
-        <h1 className="font-anton text-white my-16 md:my-0 text-[90px] sm:text-[150px] md:text-[250px]">
+        <h1 className="font-anton text-white my-16 md:my-0 text-[90px] sm:text-[150px] lg:text-[250px]">
           WEBSTERS
         </h1>
         <a href="#about">
@@ -86,18 +97,40 @@ const Homepage = () => {
           Department aims at upholding the cognitive aspect of education by
           ensuring academic excellence and intellectual growth of its students.
         </p>
-        <div className="md:grid grid-cols-3 my-12 gap-12">
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
+        <div className="lg:grid grid-cols-3 my-12 gap-12">
+          {!isLoading && !isFetching && data ? (
+            <>
+              <TeamCard member={data[0]} />
+              <TeamCard member={data[2]} />
+              <TeamCard member={data[1]} />
+            </>
+          ) : (
+            <>
+              <Skeleton
+                height={400}
+                baseColor="#202020"
+                highlightColor="#444"
+              />
+              <Skeleton
+                height={400}
+                baseColor="#202020"
+                highlightColor="#444"
+              />
+              <Skeleton
+                height={400}
+                baseColor="#202020"
+                highlightColor="#444"
+              />
+            </>
+          )}
         </div>
         <div className="flex justify-center">
-          <a
-            href="#!"
+          <Link
+            to="/team"
             className="bg-[#121212] text-white font-semibold px-6 py-2 transition-all"
           >
-            Explore More...
-          </a>
+            <a>Explore More...</a>
+          </Link>
         </div>
       </div>
 
