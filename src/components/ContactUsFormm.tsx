@@ -21,7 +21,8 @@ export const ContactUsFormm = () => {
         (error) => {
           console.log(error.text);
         }
-      );
+    );
+    e.target.reset();
   };
 
   return (
