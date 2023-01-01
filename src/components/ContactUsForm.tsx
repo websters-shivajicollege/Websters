@@ -3,7 +3,7 @@ function ContactUsForm() {
   function sendEmail() {}
   return (
     <>
-      <div className="container  w-full p-4 md:p-0 md:pl-32 md:pr-20 ">
+      <div className="container  w-full p-4 md:p-2 lg:pl-16 lg:pr-20 ">
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto m-5 mt-2">
@@ -34,10 +34,10 @@ function ContactUsForm() {
               />
             </div>
 
-            <div className="col-8 form-group pb-4 text-xl ">
+            <div className="col-8 form-group pb-4 text-xl mt-4 float-right ">
               <input
                 type="submit"
-                className="btn btn-info border-2 border-white rounded-lg p-1 pl-2 pr-2 hover:bg-gray-900 "
+                className="btn btn-info border-2 border-white bg-white text-black rounded-lg p-1 pl-4 pr-4   font-semibold hover:bg-slate-300  "
                 value="Send Messege"
                 placeholder="Send-Messege"
                 name="Send-Messege"
