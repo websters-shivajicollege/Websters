@@ -1,6 +1,10 @@
+import Skeleton from "react-loading-skeleton";
 import TeamCard from "../components/TeamCard";
+import useMember from "../hooks/useMembers";
 
 const Team = () => {
+  const { isLoading, isFetching, data } = useMember();
+
   return (
     <div style={{ color: "white" }} className="container mx-auto">
       <div className="container flex mx-auto pt-16 pb-16">
@@ -17,12 +21,31 @@ const Team = () => {
         COUNCIL
       </h1>
       <div className="grid lg:grid-cols-3">
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
-        <TeamCard />
+        {(isLoading || isFetching) && (
+          <>
+            <Skeleton
+              height={300}
+              width={370}
+              baseColor="#202020"
+              highlightColor="#444"
+            />
+            <Skeleton
+              height={300}
+              width={370}
+              baseColor="#202020"
+              highlightColor="#444"
+            />
+            <Skeleton
+              height={300}
+              width={370}
+              baseColor="#202020"
+              highlightColor="#444"
+            />
+          </>
+        )}
+        {!isFetching &&
+          !isLoading &&
+          data?.map((member) => <TeamCard member={member} />)}
       </div>
     </div>
   );
