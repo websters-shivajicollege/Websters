@@ -7,7 +7,7 @@ import Team from "./Pages/Team";
 import ContactUs from "./Pages/ContactUs";
 function App() {
   const [count, setCount] = useState(0);
-
+  const [name, setName] = useState('');
   return (
    <Router>
     <Routes>

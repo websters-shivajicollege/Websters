@@ -1,7 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
-export default function TeamCard() {
+const TeamCard = (Cname) => {
   return (
     <div>
       <div>
@@ -23,7 +23,7 @@ export default function TeamCard() {
                     </div>
                     <div className="px-6 mt-16">
                       <h1 className="text-gray-800 font-bold text-3xl text-center mb-1">
-                        Kumar Amrendram
+                        {Cname}
                       </h1>
                       <p className="text-gray-800 text-xl text-center">
                         President
@@ -113,3 +113,5 @@ export default function TeamCard() {
     </div>
   );
 }
+
+export default TeamCard;

@@ -17,7 +17,7 @@ const Team = () => {
         COUNCIL
       </h1>
       <div className="grid lg:grid-cols-3">
-        <TeamCard />
+        <TeamCard Cname={"Name"}/>
         <TeamCard />
         <TeamCard />
         <TeamCard />
