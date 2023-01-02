@@ -17,11 +17,11 @@ export default function EventCard() {
         impedit dolorum ab repellendus numquam sed eos. Impedit iure explicabo
         animi?
       </div>
-      <div className="relative flex flex-row flex-space grid sm:grid-cols-2  "  >
-        <div className="relavtive text-black pt-2 pb-2 shadow hover:shadow-2xl sm:pl-6 pl-12 pr-12 font-bold mt-8 ml-6 bg-white">
+      <div className="relative  max-sm:row-span-1 sm:grid-rows-1 grid md:grid-cols-2 mt-12 gap-8 "  >
+        <div className="relavtive text-black   text-center p-3  md:text-lg text-2xl font-bold  bg-white">
           <a href="/">Register</a>
         </div>
-        <div className="relavtive text-black pt-2 pb-2 shadow hover:shadow-2xl pl-16 pr-16 font-bold mt-8 ml-8 bg-white">
+        <div className="relavtive text-black max-sm:p-3 sm:pt-2 sm:p-3 text-center pt-3 md:text-lg  text-2xl  font-bold  bg-white ">
           <a href="/">Vist</a>
         </div>
       </div>

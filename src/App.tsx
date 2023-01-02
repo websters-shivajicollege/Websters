@@ -1,23 +1,20 @@
-import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Event from "./Pages/Event"
-import HomePage from "./Pages/HomePage"
+import Event from "./Pages/Event";
+import Homepage from "./Pages/HomePage";
 import Team from "./Pages/Team";
 import ContactUs from "./Pages/ContactUs";
 function App() {
-  const [count, setCount] = useState(0);
-  const [name, setName] = useState('');
   return (
-   <Router>
-    <Routes>
-    <Route path="/" element={<HomePage/>} />
-    <Route path="/Event" element={<Event/>} />
-    <Route path="/Team" element={<Team/>} />
-    <Route path="/ContactUs" element={<ContactUs/>} />
-    </Routes>
-   </Router>
-  ); 
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/events" element={<Event />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
