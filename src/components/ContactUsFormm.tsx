@@ -9,10 +9,10 @@ export const ContactUsFormm = () => {
 
     emailjs
       .sendForm(
-        "service_7lzbwdf",
-        "template_34uyh86",
+        "service_mkrgmwt",
+        "template_3e0qnag",
         form.current,
-        "0W1XjH90DiMTpxqo4"
+        "o4SG69K88IyF7SZs7"
       )
       .then(
         (result) => {
@@ -21,7 +21,7 @@ export const ContactUsFormm = () => {
         (error) => {
           console.log(error.text);
         }
-    );
+      );
     e.target.reset();
   };
 
@@ -47,7 +47,11 @@ export const ContactUsFormm = () => {
           className="m-4 mt-2 w-full rounded h-20 p-2 text-black"
           name="message"
         />
-        <input className="m-4 mr-0 float-right bg-white text-black p-1 pr-3 pl-3 font-semibold text-2xl rounded hover:bg-slate-300" type="submit" value="Send" />
+        <input
+          className="m-4 mr-0 float-right bg-white text-black p-1 pr-3 pl-3 font-semibold text-2xl rounded hover:bg-slate-300"
+          type="submit"
+          value="Send"
+        />
       </form>
     </div>
   );

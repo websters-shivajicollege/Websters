@@ -1,4 +1,3 @@
-import ContactUsForm from "../components/ContactUsForm";
 import { ContactUsFormm } from "../components/ContactUsFormm";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -25,7 +24,7 @@ function ContactUs() {
                 alt=""
                 className="relative mr-2 bg-cover w-8 float-left "
               />
-              websters@mail.com
+              Webstersshivaji@gmail.com
             </h2>
           </div>
 
@@ -61,14 +60,14 @@ function ContactUs() {
           <ul className="w-full lg:w-1/2  md:text-left md:float-left p-4 ">
             <h3 className=" text-2xl font-semibold">President </h3>
             <p>Kumar Amrendram</p>
-            <p>9876543210</p>
-            <p>abcdefgh@gmal.com</p>
+            <p>+91 96258 54106</p>
+            
           </ul>
           <ul className="w-full  lg:w-1/2 md:text-left md:float-left p-4 ">
             <h3 className=" text-2xl font-semibold">Vice-President </h3>
             <p>Kamini Tiwari</p>
-            <p>9876543210</p>
-            <p>abcdefgh@gmal.com</p>
+            <p>+91 70073 66270</p>
+            
           </ul>
         </div>
       </div>
