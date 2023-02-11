@@ -33,7 +33,7 @@ export const ContactUsFormm = () => {
           className="m-4 mt-2 w-full rounded h-9 p-2 text-black"
           type="text"
           name="user_name"
-          placeholder="Enter Name"
+          placeholder="Enter your Name"
         />
         <label className="w-full ml-4 text-l lg:text-2xl">Email </label>
         <input
